@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Precios</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="header">
+    <h1>🛒 Precios Tienda</h1>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="contenedor">
+
+    <!-- BUSCADOR -->
+    <input
+      type="text"
+      id="buscador"
+      class="buscador"
+      placeholder="Buscar producto..."
+    >
+
+    <!-- AGREGAR PRODUCTO -->
+    <section class="agregar">
+      <input
+        type="text"
+        id="inputNombre"
+        placeholder="Nombre del producto"
+      >
+
+      <input
+        type="number"
+        id="inputPrecio"
+        placeholder="Precio"
+      >
+
+      <button id="btnAgregar">
+        ➕ Agregar
+      </button>
+    </section>
+
+    <!-- LISTA DE PRODUCTOS -->
+    <section class="lista" id="listaProductos">
+
+      <!-- Producto (ejemplo visual, JS los generará) -->
+      <!--
+      <div class="producto">
+        <div class="info">
+          <span class="nombre">Arroz</span>
+          <span class="precio">$25</span>
+        </div>
+        <div class="acciones">
+          <button class="editar">✏️</button>
+          <button class="eliminar">❌</button>
+        </div>
+      </div>
+      -->
+
+    </section>
+
+  </main>
+
+  <button id="btnAbrirCarrito" class="btn-carrito">🛒 Carrito</button>
+
+<div id="carritoPanel" class="carrito-panel oculto">
+  <button id="btnCerrarCarrito">⬅️ Volver</button>
+  <h2>Carrito</h2>
+
+  <div id="listaCarrito"></div>
+
+  <p class="total">
+    Total: $<span id="totalCarrito">0</span>
+  </p>
+
+  <button id="btnVaciar">Nueva venta</button>
+</div>
+
+
+
+  <!-- JS -->
+  <script src="app.js"></script>
+
+</body>
+</html>
